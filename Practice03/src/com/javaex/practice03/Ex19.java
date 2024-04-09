@@ -9,13 +9,13 @@ public class Ex19 {
 		Scanner scanner = new Scanner(System.in);		
 		
 		String str = "------------------------------\n1.예금 | 2.출금 |"
-				+ " 3.잔고 | 4.종료\n------------------------------";
+				+ " 3.잔고 | 4.종료\n------------------------------\n선택>";
 		
 		int sel = 0, kou = 0;
 		
-		for ( ;!(sel == 4); ) {
+		for ( ;sel != 4; ) {
 			
-			System.out.println(str);
+			System.out.print(str);
 			
 			sel = scanner.nextInt();
 			
@@ -39,7 +39,7 @@ public class Ex19 {
 			break;
 			
 			case 4 : System.out.println("프로그램 종료");
-			
+			scanner.close();
 			break;
 			
 			default : System.out.println("다시입력해주세욧");
@@ -48,10 +48,10 @@ public class Ex19 {
 			
 			}
 		
-			scanner.close();
-		
 		}
 
+		
+		
 	}
 
 }
